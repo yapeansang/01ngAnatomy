@@ -21,7 +21,7 @@ This is a great opportunity for us to get started with Angular.
 
 Update the `template` property to read `Hello Universe`
 
-```
+```javascript
 template: `
     Hello Universe
 `,
@@ -32,7 +32,7 @@ When you changed the HTML template, the preview updated with your message. Let's
 
 Update the styles value and change the `color` property from `blue` to `#a144eb`.
 
-```
+```javascript
 styles: `
     :host {
         color: #a144eb;
