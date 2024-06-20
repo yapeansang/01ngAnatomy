@@ -1,27 +1,44 @@
-# Anatomy
+# Welcome to the Angular tutorial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+This tutorial will teach you the basic building blocks to start building great apps with Angular.
 
-## Development server
+Each step represents a concept in Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Components in Angular
 
-## Code scaffolding
+Components are the foundational building blocks for any Angular application. Each component has three parts:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Typescript class;
+- HTML template;
+- CSS styles.
 
-## Build
+In this activity, we'll learn how to update the template and styles of a component.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
+This is a great opportunity for us to get started with Angular.
 
-## Running unit tests
+### Update the component template
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Update the `template` property to read `Hello Universe`
 
-## Running end-to-end tests
+```
+template: `
+    Hello Universe
+`,
+```
+When you changed the HTML template, the preview updated with your message. Let's go one step further: change the color of the text.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Update the component styles
 
-## Further help
+Update the styles value and change the `color` property from `blue` to `#a144eb`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```
+styles: `
+    :host {
+        color: #a144eb;
+    }
+`,
+```
+When you check the preview, you'll find that the text color will be changed.
+
+In Angular, you can use all the browser supported CSS and HTML that's available. If you'd like, you can store your template and styles in separate files.
